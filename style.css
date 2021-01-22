@@ -1,0 +1,25 @@
+#mainGridContainer {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'leftNav etch etch'
+    'leftNav etch etch';
+}
+#container {
+    grid-area: etch;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 30px);
+
+}
+#header {
+    grid-area: header;
+    border: 1px solid;
+}
+#leftNav {
+    grid-area: leftNav;
+    border: 1px solid;
+}
+.grid {
+    background-color: green;
+}
